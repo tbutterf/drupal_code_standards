@@ -10,20 +10,19 @@
     Drupal, DrupalPractice compatible PhpMd ruleset.
   </description>
 
-  <!-- Import the entire unused code rule set -->
-  <rule ref="rulesets/unusedcode.xml" />
-  <rule ref="rulesets/design.xml" />
-  <rule ref="rulesets/naming.xml" />
-  <rule ref="rulesets/codesize.xml" />
-
   <rule ref="rulesets/cleancode.xml">
     <exclude name="StaticAccess" />
     <exclude name="MissingImport" />
   </rule>
 
+  <rule ref="rulesets/codesize.xml" />
   <rule ref="rulesets/controversial.xml">
     <exclude name="CamelCaseParameterName" />
     <exclude name="CamelCaseVariableName" />
     <exclude name="LongVariable" />
   </rule>
+
+  <rule ref="rulesets/design.xml" />
+  <rule ref="rulesets/naming.xml" />
+  <rule ref="rulesets/unusedcode.xml" />
 </ruleset>
