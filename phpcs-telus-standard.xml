@@ -21,7 +21,7 @@
 
   <rule ref="Drupal"/>
   <rule ref="DrupalPractice"/>
-<!--  <rule ref="PHPCompatibility"/>-->
+  <rule ref="PHPCompatibility"/>
 
   <!-- Class name must be prefixed with the project name -->
   <rule ref="DrupalPractice.General.ClassName.ClassPrefix">
@@ -37,10 +37,6 @@
   <rule ref="DrupalPractice.General.VariableName.VariableName">
     <severity>0</severity>
   </rule>
-  <!-- Var name must be prefixed with module name.  <rule ref="Drupal.Commenting">
-    <severity>0</severity>
-  </rule>
- -->
 
   <!-- Ignore keyed arrays syntax. -->
   <rule ref="Squiz.Arrays.ArrayDeclaration.KeySpecified">
