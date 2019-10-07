@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<ruleset name="Telus Commerce coding standards">
+<ruleset name="Custom Drupal code standards">
 
   <exclude-pattern>*/.git/*</exclude-pattern>
   <exclude-pattern>*/config/*</exclude-pattern>
@@ -10,9 +10,6 @@
   <exclude-pattern>*/node_modules/*</exclude-pattern>
   <exclude-pattern>*rules_export.txt</exclude-pattern>
   <exclude-pattern>*/features/*</exclude-pattern>
-
-  <!-- This module is not our code.-->
-  <exclude-pattern>*/telus_mobile_detect/*</exclude-pattern>
 
   <!-- For colored cli output -->
   <arg name="colors"/>
@@ -42,4 +39,5 @@
   <rule ref="Squiz.Arrays.ArrayDeclaration.KeySpecified">
     <severity>0</severity>
   </rule>
+
 </ruleset>

@@ -1,6 +1,6 @@
 {
-    "require": {
-        "drupal/coder": "^8.3",
-        "phpcompatibility/php-compatibility": "^9.3"
-    }
+  "require": {
+    "drupal/coder": "^8.3",
+    "phpcompatibility/php-compatibility": "^9.3"
+  }
 }
