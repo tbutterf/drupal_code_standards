@@ -1,6 +1,12 @@
 <?xml version="1.0"?>
 <ruleset name="Custom Drupal code standards">
 
+  <!-- Combine these rulesets. -->
+  <rule ref="Drupal"/>
+  <rule ref="DrupalPractice"/>
+  <rule ref="PHPCompatibility"/>
+
+  <!-- Ignore any files in these paths. -->
   <exclude-pattern>*/.git/*</exclude-pattern>
   <exclude-pattern>*/config/*</exclude-pattern>
   <exclude-pattern>*/css/*</exclude-pattern>
@@ -13,26 +19,18 @@
 
   <!-- For colored cli output -->
   <arg name="colors"/>
-  <!-- To show where the rule comes from. Equivalent to phpcs -s -->
+  <!-- To show rule names. Equivalent to "phpcs -s" -->
   <arg value="sp"/>
 
-  <rule ref="Drupal"/>
-  <rule ref="DrupalPractice"/>
-  <rule ref="PHPCompatibility"/>
+  <!-- Depending on your project, you may need to ignore specific rules until
+       they can be fixed one at a time. Here is an example of how to ignore a
+       specific rule. -->
 
-  <!-- Class name must be prefixed with the module name -->
+  <!-- Class name must be prefixed with the module name. -->
+  <!--
   <rule ref="DrupalPractice.General.ClassName.ClassPrefix">
     <severity>0</severity>
   </rule>
-
-  <!-- Var name must be lowerCaps -->
-  <rule ref="Drupal.NamingConventions.ValidVariableName.LowerCamelName">
-    <severity>0</severity>
-  </rule>
-
-  <!-- Var name must be prefixed with module name. -->
-  <rule ref="DrupalPractice.General.VariableName.VariableName">
-    <severity>0</severity>
-  </rule>
+  -->
 
 </ruleset>
