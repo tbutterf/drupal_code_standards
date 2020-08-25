@@ -2,4 +2,4 @@
 
 This repo is a resource for getting phpcs setup with everything you need to integrate Drupal standards with PhpStorm.
 
-For setup instructions please see https://blog.acromedia.com.
+For setup instructions please see https://blog.acromedia.com/making-drupal-code-standards-work-for-you-with-phpstorm-phpcs-phpcbf.
