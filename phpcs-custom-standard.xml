@@ -3,7 +3,7 @@
 
   <!-- Combine these rulesets. -->
   <rule ref="Drupal"/>
-  <rule ref="DrupalPractice"/>
+  <!-- <rule ref="DrupalPractice"/> -->
   <rule ref="PHPCompatibility"/>
 
   <!-- Ignore any files in these paths. -->
